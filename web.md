@@ -39,6 +39,6 @@ Injects malicious code to a web page
 
 `<body onresize=alert(1)`
 
-
+and more on [portswigger.net](https://portswigger.net/web-security/cross-site-scripting/cheat-sheet)
 ### SQL Injection
 ### CSRF (Cross-Site-Request-Forgery)
