@@ -10,7 +10,7 @@
 
 `sqlmap` to detect and exploit SQL Injection
 
-and of course `F12(Developer tools) in Browser(very useful!)`
+and of course `F12(Developer tools)` in Browser(very useful!)
 ### #don't be a script kiddy!!
 
 
