@@ -1,4 +1,6 @@
 # notes
-Some notes about information security
-## [pentest](https://github.com/wh00am1/notes/tree/master/pentest)
+## Some notes about information security
+## pentest
 ### notes about linux/windows pentest
+## web.md
+### notes about web security
