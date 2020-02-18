@@ -14,4 +14,7 @@ and of course `F12(Developer tools) in Browser(very useful!)`
 ### #don't be a script kiddy!!
 
 
-## Common Vulnerbility
+## Common Vulnerbilities
+### XSS(Cross Site Scripting)
+### SQL Injection
+### CSRF (Cross-Site-Forgery)
