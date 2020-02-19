@@ -42,6 +42,15 @@ and more on [portswigger.net](https://portswigger.net/web-security/cross-site-sc
 ### SQL Injection
 
 #### Attacking Vectors
+##### Check if the vulnerability exists
+Common vectors like
+
+`'` and `ORDER BY 1`
+
+Blind-Injections to check without debug info
+
+`' AND 1=1 ` (true) `' AND 1=2 ` (false)
+
 ##### Comment the rest of the query
 `DROP TABLE1; --`
 
@@ -51,8 +60,6 @@ or
 ##### Login bypass
 use `'` and `--` to close brackets and comment the queries
 ##### Common Vectors(MySQL for example)
-`SELECT @@version`
-
 `SELECT user();`
 
 `SELECT user FROM mysql.user;`
