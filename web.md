@@ -73,6 +73,8 @@ use `'` and `--` to close brackets and comment the queries
 `SELECT table_schema,table_name FROM information_schema.tables WHERE table_schema != ‘mysql’ AND table_schema != ‘information_schema’`
 
 `SELECT table_schema, table_name FROM information_schema.columns WHERE column_name = ‘username’`
+
+##### !No `information_schema` in MySQL < 5!
 ### CSRF (Cross-Site-Request-Forgery)
 
 
