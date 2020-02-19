@@ -76,5 +76,13 @@ use `'` and `--` to close brackets and comment the queries
 
 ##### !No `information_schema` in MySQL < 5!
 ### CSRF (Cross-Site-Request-Forgery)
+#### Attacking Vectors
+Try injecting elements in siteB to siteA:
+
+`<img src = http://www.siteb.com/blog.php?action=delete></img>`
+
+### SSRF (Server-Side-Request-Forgery)
+Like CSRF, but inject element to perform request to an intranet server
+
 
 
