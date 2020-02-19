@@ -17,8 +17,7 @@ and of course `F12(Developer tools)` in Browser(very useful!)
 ## Common Vulnerbilities
 
 ### XSS(Cross Site Scripting)
-#### Description
-Injects malicious code to a web page
+
 #### Attacking Vectors
 ##### Basic
 `<script src = www.example.com/xss.js></script>`
@@ -41,8 +40,7 @@ Injects malicious code to a web page
 
 and more on [portswigger.net](https://portswigger.net/web-security/cross-site-scripting/cheat-sheet)
 ### SQL Injection
-#### Description
-Inject SQL syntax to a vulnerble server
+
 #### Attacking Vectors
 ##### Comment the rest of the query
 `DROP TABLE1; --`
