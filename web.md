@@ -51,6 +51,10 @@ Blind-Injections to check without debug info
 
 `' AND 1=1 ` (true) `' AND 1=2 ` (false)
 
+Timing attack
+
+`BENCHMARK(878787878787, ('hey', 'you'))`
+
 ##### Comment the rest of the query
 `DROP TABLE1; --`
 
