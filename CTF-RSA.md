@@ -8,7 +8,7 @@ and `Python`,  `openssl`
 
 Install `libnum`, `gmpy2`, `Crypto` first
 
-## Solution to some types of challenge
+## Solution of some types of challenges
 ### 1. Basic(decrypt it!)
 ```python
 phi = (p - 1) * (q - 1)
