@@ -17,7 +17,7 @@ openssl:
 ```python
 phi = (p - 1) * (q - 1)
 d = libnum.modular.invmod(e, phi)
-m = libnum.n2s(pow(c, d, n)) 
-print(m)  
+text = libnum.n2s(pow(c, d, n)) 
+print(text)  
 ```
 ### 2.
