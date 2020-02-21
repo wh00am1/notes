@@ -8,16 +8,12 @@ and `Python`,  `openssl`
 
 Install `libnum` first
 
-openssl:
-
-`openssl   rsautl -encrypt -in FLAG -inkey public.pem -pubin -out flag.enc`
-
 ## Solution to some types of challenge
 ### 1.Basic(decrypt it!)
 ```python
 phi = (p - 1) * (q - 1)
 d = libnum.modular.invmod(e, phi)
-text = libnum.n2s(pow(c, d, n)) 
+text = libnum.n2s(pow(ciphertext, d, n)) 
 print(text)  
 ```
 ### 2.
