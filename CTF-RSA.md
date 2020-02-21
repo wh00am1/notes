@@ -11,8 +11,8 @@ Install `libnum`, `gmpy2`, `Crypto` first
 ## Solution of some types of challenges
 ### 1. Basic(decrypt it!)
 ```python
-phi = (p - 1) * (q - 1)
-d = libnum.modular.invmod(e, phi)
+phi_n = (p - 1) * (q - 1)
+d = libnum.modular.invmod(e, phi_n)
 text = libnum.n2s(pow(ciphertext, d, n)) 
 print(text)  
 ```
