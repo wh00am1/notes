@@ -59,8 +59,8 @@ print('q2:', q2)
 ### 6. e=3
 ```python
 for k in xrange(200000000):    
-    if gmpy2.iroot(cipher + n*k, 3)[1]==1:    
-        text = gmpy2.iroot(cipher + n*k, 3)[0]    
+    if gmpy2.iroot(ciphertext + n*k, 3)[1]==1:    
+        text = gmpy2.iroot(ciphertext + n*k, 3)[0]    
         print('k:', k)    
         print(libnum.n2s(text)) 
 ```
