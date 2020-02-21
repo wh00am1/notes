@@ -54,5 +54,14 @@ d = gmpy2.invert(e, phi_n)
 text = libnum.n2s(pow(ciphertext, d, n)) 
 print(text)
 ```
-
-
+### 5. Common divisor
+```python
+n1 = n1
+n2 = n2
+p = gmpy2.gcd(n1, n2)
+q1 = n1 / p
+q2 = n2 / p
+print('p:\n', p)
+print('q1:\n', q1)
+print('q2:\n', q2)
+```
