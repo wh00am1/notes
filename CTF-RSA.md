@@ -52,15 +52,15 @@ n2 = n2
 p = gmpy2.gcd(n1, n2)
 q1 = n1 / p
 q2 = n2 / p
-print('p:\n', p)
-print('q1:\n', q1)
-print('q2:\n', q2)
+print('p:', p)
+print('q1:', q1)
+print('q2:', q2)
 ```
 ### 6. e=3
 ```python
 for k in xrange(200000000):    
     if gmpy2.iroot(c+n*k,3)[1]==1:    
         res=gmpy2.iroot(c+n*k,3)[0]    
-        print('k:\n', k)    
+        print('k:', k)    
         print(libnum.n2s(text)) 
 ```
