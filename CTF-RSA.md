@@ -6,6 +6,8 @@
 
 and `Python`,  `openssl`
 
+Install `libnum` first
+
 openssl:
 
 `openssl   rsautl -encrypt -in FLAG -inkey public.pem -pubin -out flag.enc`
@@ -18,3 +20,4 @@ d = libnum.modular.invmod(e, phi)
 m = libnum.n2s(pow(c, d, n)) 
 print(m)  
 ```
+### 2.
