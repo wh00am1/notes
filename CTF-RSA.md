@@ -60,7 +60,7 @@ print('q2:', q2)
 ```python
 for k in xrange(200000000):    
     if gmpy2.iroot(cipher + n*k, 3)[1]==1:    
-        res=gmpy2.iroot(cipher + n*k, 3)[0]    
+        text = gmpy2.iroot(cipher + n*k, 3)[0]    
         print('k:', k)    
         print(libnum.n2s(text)) 
 ```
