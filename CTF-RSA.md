@@ -18,9 +18,9 @@ print(text)
 ```
 ### 2. d Unknown
 ```python
-p =gmpy2.mpz(p)
-q =gmpy2.mpz(q)
-e =gmpy2.mpz(e)
+p = gmpy2.mpz(p)
+q = gmpy2.mpz(q)
+e = gmpy2.mpz(e)
 phi_n= (p - 1) * (q - 1)
 d = gmpy2.invert(e, phi_n)
 print(d)
@@ -31,14 +31,28 @@ use [factordb.com](http://factordb.com/index.php) to factor
 =>p,q known, phi(n)=(p-1)(q-1)
 
 ```python
-p =gmpy2.mpz(p)
-q =gmpy2.mpz(q)
-e =gmpy2.mpz(e)
+p = gmpy2.mpz(p)
+q = gmpy2.mpz(q)
+e = gmpy2.mpz(e)
 phi_n= (p - 1) * (q - 1)
 d = gmpy2.invert(e, phi_n)
 text = libnum.n2s(pow(ciphertext, d, n)) 
 print(text)
 ```
 
-### 4. p, q, e, c known(decrypt)
+### 4. p, q, e, cipher known(decrypt)
 n p*q
+
+=>n known, decrypt it:
+```python
+p = gmpy2.mpz(p)
+q = gmpy2.mpz(q)
+e = gmpy2.mpz(e)
+n = p*q
+phi_n= (p - 1) * (q - 1)
+d = gmpy2.invert(e, phi_n)
+text = libnum.n2s(pow(ciphertext, d, n)) 
+print(text)
+```
+
+
