@@ -22,7 +22,7 @@ phi_n= (p - 1) * (q - 1)
 d = gmpy2.invert(e, phi_n)
 print(d)
 ```
-### 3. cipher, n, e known(decrypt)
+### 3. n, e known(decrypt)
 use [factordb.com](http://factordb.com/index.php) to factor
 
 =>p,q known, phi(n)=(p-1)(q-1)
@@ -34,7 +34,7 @@ text = libnum.n2s(pow(ciphertext, d, n))
 print(text)
 ```
 
-### 4. p, q, e, cipher known(decrypt)
+### 4. p, q, e known(decrypt)
 n p*q
 
 =>n known, decrypt it:
