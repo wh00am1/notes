@@ -6,7 +6,7 @@
 
 and `Python`,  `openssl`
 
-Install `libnum`, `gmpy2` first
+Install `libnum`, `gmpy2`, `Crypto` first
 
 ## Solution to some types of challenge
 ### 1. Basic(decrypt it!)
