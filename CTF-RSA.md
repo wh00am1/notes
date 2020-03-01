@@ -8,21 +8,21 @@ and `Python`,  `openssl`
 
 Install `libnum`, `gmpy2`, `Crypto` first
 
-## Solution of some types of challenges
-### 1. Basic(decrypt it!)
+## 一些解題方法
+### 1. 最基本(decrypt it!)
 ```python
 phi_n = (p - 1) * (q - 1)
 d = libnum.modular.invmod(e, phi_n)
 text = libnum.n2s(pow(ciphertext, d, n)) 
 print(text)  
 ```
-### 2. d Unknown
+### 2. 求d的值 
 ```python
 phi_n= (p - 1) * (q - 1)
 d = gmpy2.invert(e, phi_n)
 print(d)
 ```
-### 3. n, e known(decrypt)
+### 3. 已知n, e 解密
 use [factordb.com](http://factordb.com/index.php) to factor
 
 =>p,q known, phi(n)=(p-1)(q-1)
@@ -34,7 +34,7 @@ text = libnum.n2s(pow(ciphertext, d, n))
 print(text)
 ```
 
-### 4. p, q, e known(decrypt)
+### 4. 已知p, q, e(解密)
 n p*q
 
 =>n known, decrypt it:
@@ -45,7 +45,7 @@ d = gmpy2.invert(e, phi_n)
 text = libnum.n2s(pow(ciphertext, d, n)) 
 print(text)
 ```
-### 5. Common divisor
+### 5. 公因數分解兩個n
 ```python
 n1 = n1
 n2 = n2
@@ -56,7 +56,7 @@ print('p:', p)
 print('q1:', q1)
 print('q2:', q2)
 ```
-### 6. e=3
+### 6. e=3(e過小)
 ```python
 for k in xrange(200000000):    
     if gmpy2.iroot(ciphertext + n*k, 3)[1]==1:    
