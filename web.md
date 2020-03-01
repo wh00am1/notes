@@ -62,7 +62,7 @@ or
 
 `DROP TABLE1; #`
 ##### Login bypass
-use `'` and `--` to close brackets and comment the queries
+use `'` and `--` 來閉合引號和註解
 ##### Common Vectors(MySQL for example)
 `SELECT user();`
 
