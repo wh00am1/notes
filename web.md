@@ -1,16 +1,16 @@
 
-## Useful Auditing Tools:
-`burpsuite` to capture and modify packets (purchase pro version if you like auto scannning :p)
+## 分析工具:
+`burpsuite` 抓包 改包
 
-`nmap ncat` to scan and test ports
+`nmap ncat` 掃port 測port
 
-`whois` and `theharvester` to collect OSINT data
+`whois` and `theharvester` OSINT
 
-`python` to create scripts
+`python` 不用多說
 
-`sqlmap` to detect and exploit SQL Injection
+`sqlmap` 不用多說
 
-and of course `F12(Developer tools)` in Browser(very useful!)
+還有瀏覽器的 `F12(Developer tools)` (超級有用!)
 ### #別當 script kiddy!!
 
 
