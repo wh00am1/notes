@@ -88,5 +88,6 @@ use `'` and `--` 來閉合引號和註解
 ### SSRF (Server-Side-Request-Forgery)
 很像csrf，但是用來訪問內網的server
 
+### ClickJacking
 
-
+插一個透明的frame，直接設定成網頁大小，無論如何使用者都會點擊到frame的內容
