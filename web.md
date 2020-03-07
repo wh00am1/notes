@@ -39,6 +39,10 @@
 `<body onresize=alert(1)`
 
 and more on [portswigger.net](https://portswigger.net/web-security/cross-site-scripting/cheat-sheet)
+
+#### Fixing
+escape html字元
+
 ### SQL 注入
 
 #### Attacking Vectors
@@ -79,14 +83,26 @@ use `'` and `--` 來閉合引號和註解
 `SELECT table_schema, table_name FROM information_schema.columns WHERE column_name = ‘username’`
 
 ##### !No `information_schema` in MySQL < 5!
+
+#### Fixing
+預編譯SQL語句
+
 ### CSRF (Cross-Site-Request-Forgery)
 #### Attacking Vectors
 將siteB的元素注入到siteA:
 
 `<img src = http://www.siteb.com/blog.php?action=delete></img>`
 
+#### Fixing
+檢查referer
+
+captcha
+
+csrf token(保存在server的session裡面，隨機產生)
+
 ### SSRF (Server-Side-Request-Forgery)
 很像csrf，但是用來訪問內網的server
+
 
 ### ClickJacking
 
