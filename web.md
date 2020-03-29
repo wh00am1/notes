@@ -87,6 +87,30 @@ use `'` and `--` 來閉合引號和註解
 #### Fixing
 預編譯SQL語句
 
+### PHP-Include (上傳漏洞)
+PHP 的 include(), require(), include_once(), require_once()可供利用
+
+#### Attacking Vectors
+##### file_put_contents寫入
+直接
+
+`file_put_contents('path', content')`
+
+##### php偽協議
+`data:text/html;ascii, ........`
+
+也可以base64
+
+##### 本地包含(LFI)
+透過改包，可以讀取檔案
+
+##### 其他
+`../../`上層目錄
+
+用編碼繞防火牆
+
+POST Data 也可以注入payload
+
 ### CSRF (Cross-Site-Request-Forgery)
 #### Attacking Vectors
 將siteB的元素注入到siteA:
