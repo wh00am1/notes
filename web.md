@@ -67,6 +67,13 @@ or
 `DROP TABLE1; #`
 ##### Login bypass
 use `'` and `--` 來閉合引號和註解
+
+##### 萬用密碼
+`admin 'or'1'='1`
+
+密碼亂打，bypass
+
+如果檢查sql injection則:
 ##### Common Vectors(MySQL for example)
 `SELECT user();`
 
