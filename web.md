@@ -66,7 +66,7 @@ or
 
 `DROP TABLE1; #`
 ##### Login bypass
-use `'` and `--` 來閉合引號和註解
+用 `'` 和 `--` 來閉合引號和註解
 
 ##### 萬用密碼
 `admin 'or'1'='1`
