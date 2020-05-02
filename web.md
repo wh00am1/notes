@@ -74,6 +74,8 @@ or
 密碼亂打，bypass
 
 如果檢查sql injection則:
+
+`admin '--`
 ##### Common Vectors(MySQL for example)
 `SELECT user();`
 
