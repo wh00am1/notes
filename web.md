@@ -136,6 +136,8 @@ csrf token(保存在server的session裡面，隨機產生)
 ### SSRF (Server-Side-Request-Forgery)
 很像csrf，但是用來訪問內網的server
 
+使用 `php` 偽協議 `RFI` 之類的方式實現
+
 
 ### ClickJacking
 
