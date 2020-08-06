@@ -4,7 +4,7 @@
 
 ### Memory Layout
 
-程式時的記憶體mapping大致像是這樣:
+程式執行時的記憶體mapping大致像是這樣:
 
 ![avatar](https://github.com/wh00am1/notes/blob/master/memoryLayoutC.jpg)
 
