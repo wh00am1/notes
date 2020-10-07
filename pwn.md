@@ -50,6 +50,46 @@ reference : [CTF-wiki](https://ctf-wiki.github.io/ctf-wiki/pwn/linux/stackoverfl
 
 ## Heap-based pwn
 
+### Basic concept
+
 當使用者輸入非法長度的資料時，能夠覆蓋超過當前chunk的資料
 
 從而overwrite 一些資訊(例如`got`, 甚至`return address`)
+
+### Heap overview
+
+以下為chunk structure:
+
+```c
+struct chunk {
+    int prev_size;
+    int size;
+    struct chunk *fd;  
+    struct chunk *bk;  
+};
+```
+### Heap overflow
+
+覆蓋下一個chunk的chunk meta data -> 控制chunk
+
+### The unlink() exploit
+
+unlink() in free() `(dlmalloc)`
+
+```c
+#define unlink(p, bck, fwd)                             
+{                                                       
+    bck = p->bk;                                          
+    fwd = p->fd;                                          
+    fwd->bk = bck;                                        
+    bck->fd = fwd;                                        
+}
+```
+
+重點: 
+```c
+(next -> fd + 12) = next -> bk;
+(next -> bk + 8 ) = next -> fd;
+```
+
+fd, bk可控 > arbitrary write
